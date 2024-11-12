@@ -1,0 +1,22 @@
+:root {
+  /* Primary colors */
+  --color-primary: #1a73e8;
+
+  /* Neutral colors */
+  --color-text: #3c4043;
+  --color-border: #dadce0;
+  --color-background: #fff;
+  --color-hover: #f8f9fa;
+
+  /* Status colors */
+  --color-success: #a2d46d;
+
+  /* Spacing */
+  /* Padding for th and td elements needs to be consistent across the table. Rows are reusable components with separate CSS. */
+  --table-cell-padding: 12px 24px;
+}
+
+body {
+  font-family: sans-serif;
+  color: var(--color-text);
+}

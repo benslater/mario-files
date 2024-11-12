@@ -1,0 +1,22 @@
+.status-indicator {
+  display: flex;
+  align-items: center;
+  position: relative;
+  font-size: 1rem;
+}
+
+/*
+    The status dot rendered as a pseudoelement to allow it to go outside the column.
+    There is a risk of UI jank here with the dot overlapping the cell to the left if
+    the padding in the cells is changed to less than the width of the dot.
+*/
+.status-dot-available::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 50%;
+  transform: translate(-150%, -50%);
+  background-color: var(--color-success);
+  border-radius: 50%;
+}

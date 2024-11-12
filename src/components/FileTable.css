@@ -1,0 +1,60 @@
+.file-table-container {
+  width: 100%;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table-header {
+  min-height: 48px;
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  padding: var(--table-cell-padding);
+  border-bottom: 1px solid var(--color-border);
+  background-color: var(--color-background);
+}
+
+.selected-count {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.download-button {
+  padding: 6px 12px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: var(--color-text);
+}
+
+.download-button:hover {
+  background-color: var(--color-hover);
+  border-radius: 4px;
+}
+
+.download-button-content {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.file-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--color-background);
+}
+
+.file-table thead {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.file-table th {
+  text-align: left;
+  padding: var(--table-cell-padding);
+  font-size: 1.25rem;
+  font-weight: 500;
+}

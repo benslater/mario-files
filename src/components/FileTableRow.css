@@ -1,0 +1,20 @@
+.file-row {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.file-row:last-child {
+  border-bottom: none;
+}
+
+.file-row td {
+  padding: var(--table-cell-padding);
+  font-size: 1rem;
+}
+
+.file-row:hover {
+  background-color: var(--color-hover);
+}
+
+.file-row.selected {
+  background-color: var(--color-hover);
+}
